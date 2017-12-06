@@ -11,5 +11,7 @@ public class Main {
         mateusz.deposit(100);
 
         mateusz.withdraw(1100);
+
+        mateusz.withdraw(1);
     }
 }
