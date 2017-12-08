@@ -3,10 +3,25 @@ package com.moohen;
 public class BankAccount {
 
     private String customerName;
-    private String customerEmailAdress;
+    private String customerEmailAddress;
     private String customerPhoneNumber;
     private String accountNumber;
     private double balance;
+
+    public BankAccount (String customerName, String customerEmailAddress, String customerPhoneNumber,
+                        String accountNumber, double balance) {
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public BankAccount (String customerName, String customerEmailAddress, String customerPhoneNumber) {
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
 
     public String getCustomerName() {
         return customerName;
@@ -16,12 +31,12 @@ public class BankAccount {
         this.customerName = customerName;
     }
 
-    public String getCustomerEmailAdress() {
-        return customerEmailAdress;
+    public String getCustomerEmailAddress() {
+        return customerEmailAddress;
     }
 
-    public void setCustomerEmailAdress(String customerEmailAdress) {
-        this.customerEmailAdress = customerEmailAdress;
+    public void setCustomerEmailAddress(String customerEmailAddress) {
+        this.customerEmailAddress = customerEmailAddress;
     }
 
     public String getCustomerPhoneNumber() {
@@ -61,6 +76,5 @@ public class BankAccount {
             System.out.println("You try withdraw more money than you have on account");
         }
     }
-
 
 }

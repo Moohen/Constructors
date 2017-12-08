@@ -17,5 +17,24 @@ public class Main {
         mateuszAccount.withdraw(1100);
 
         mateuszAccount.withdraw(1);
+
+        VipCustomer mateuszVipAccount = new VipCustomer("Mateusz", "moohen@gmail.com", 1000000);
+
+        System.out.println(mateuszVipAccount.getNameVipCustomer());
+        System.out.println(mateuszVipAccount.getCreditLimit());
+        System.out.println(mateuszVipAccount.getEmailAddress());
+
+        VipCustomer aniaVipAccount = new VipCustomer("Ania", "ania@gmail.com");
+
+        System.out.println(aniaVipAccount.getNameVipCustomer());
+        System.out.println(aniaVipAccount.getCreditLimit());
+        System.out.println(aniaVipAccount.getEmailAddress());
+
+        VipCustomer zbyszekVipAccount = new VipCustomer();
+
+        System.out.println(zbyszekVipAccount.getNameVipCustomer());
+        System.out.println(zbyszekVipAccount.getCreditLimit());
+        System.out.println(zbyszekVipAccount.getEmailAddress());
+
     }
 }
