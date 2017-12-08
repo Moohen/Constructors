@@ -4,14 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BankAccount mateusz = new BankAccount();
+        BankAccount mateuszAccount = new BankAccount("Mateusz", "matt.moohen@gmail.com",
+                                        "510-066-248", "1111-2222-3333-4444", 1000);
 
-        mateusz.setBalance(1000);
+        System.out.println(mateuszAccount.getBalance());
+        System.out.println(mateuszAccount.getAccountNumber());
 
-        mateusz.deposit(100);
+        mateuszAccount.setBalance(1000);
 
-        mateusz.withdraw(1100);
+        mateuszAccount.deposit(100);
 
-        mateusz.withdraw(1);
+        mateuszAccount.withdraw(1100);
+
+        mateuszAccount.withdraw(1);
     }
 }
