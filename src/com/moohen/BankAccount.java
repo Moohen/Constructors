@@ -2,45 +2,50 @@ package com.moohen;
 
 public class BankAccount {
 
-    private int accountNumber;
-    public int getAccountNumber() {
+    private String customerName;
+    private String customerEmailAdress;
+    private String customerPhoneNumber;
+    private String accountNumber;
+    private double balance;
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerEmailAdress() {
+        return customerEmailAdress;
+    }
+
+    public void setCustomerEmailAdress(String customerEmailAdress) {
+        this.customerEmailAdress = customerEmailAdress;
+    }
+
+    public String getCustomerPhoneNumber() {
+        return customerPhoneNumber;
+    }
+
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+    public String getAccountNumber() {
         return accountNumber;
     }
-    public void setAccountNumber(int accountNumber) {
+
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    private double balance;
     public double getBalance() {
         return balance;
     }
     public void setBalance(double balance) {
         this.balance = balance;
         System.out.println("Matesz your balance is " + getBalance());
-    }
-
-    private String customerName;
-    public String getCustomerName() {
-        return customerName;
-    }
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    private String email;
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    private int phoneNumber;
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 
     public void deposit(double depositAmount) {
